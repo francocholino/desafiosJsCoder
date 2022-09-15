@@ -47,11 +47,11 @@ function agregarProducto(){
 	console.log(carrito)
 }
 
-let cargarProducto = prompt("Quiere agregar un producto?").tolocaluppercase()
+let cargarProducto = prompt("Quiere agregar un producto?").toUpperCase()
 
 while(cargarProducto = "SI"){
  	agregarProducto()
- 	cargarProducto = prompt("Agregas otro producto?").tolocaluppercase()
+ 	cargarProducto = prompt("Agregas otro producto?").toUpperCase()
  }
  
 

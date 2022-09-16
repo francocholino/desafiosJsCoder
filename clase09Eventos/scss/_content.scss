@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color:$mainColor;
+}
+
+h1{
+	font-family:$mainFont;
+	font-size: $textLg;
+	color: $txt-grey;
+	font-weight: 700;
+}
+
+h3{
+	font-family: $mainFont;
+	font-size: $textMd;
+	color: $txt-grey;
+	font-weight: 300;
+	margin: 10px;
+}
+
+p{
+	font-family: $mainFont;
+	font-size: $textLg;
+	color: $txt-grey;
+	font-weight: 700;
+	margin: 10px;
+}
+
+figure{
+
+	button .btn{
+		@include texto($textLg,$txt-white,700,$mainFont)
+		background-color: $bg-red;
+		margin:15px;
+		&:hover{
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&:hover{
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.producto{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	flex: none;
+	overflow: hidden;
+	img{
+		object-fit: contain;
+		width: 100%;
+		height: 250px;
+	}
+}
+
+.btn-search{
+	@extend .btn;
+	color: $txt-grey;
+}
+
+.bg-red{
+	background-color: map-get($map:$paleta, $key: 'primary');
+}
+
+.price{
+	font-family: $mainFont;
+	font-size: $textLg;
+	font-weight: 300;
+}

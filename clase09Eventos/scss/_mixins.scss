@@ -1,0 +1,13 @@
+//mixin;
+@mixin texto($font-size,$color,$font-weight,$font-family){
+	font-size: $font-size;
+	color: $color;
+	font-weight: $font-weight;
+	font-family: $font-family;
+}
+
+$paleta:(
+	'primary': #ea0000,
+	'secondary': #b5b2b2,
+	'tertiary':#313135
+	);
